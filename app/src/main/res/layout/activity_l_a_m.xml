@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".L_A_MActivity">
+
+    <Button
+        android:id="@+id/buttonListe"
+        android:layout_width="350dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/liste"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAbsence"
+        android:layout_width="350dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/absence"
+        app:layout_constraintBottom_toTopOf="@+id/buttonModifier"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonListe" />
+
+    <Button
+        android:id="@+id/buttonModifier"
+        android:layout_width="350dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/modifier"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAbsence" />
+</androidx.constraintlayout.widget.ConstraintLayout>
